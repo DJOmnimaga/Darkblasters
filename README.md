@@ -1,7 +1,10 @@
 # Darkblasters
 Open-world, turn-based role-playing game for the TI-83 Plus, TI-84 Plus and TI-82 Advanced calculators
+
 v1.1.0
+
 (c)2021 DJ Omnimaga Music
+
 https://djomnimaga.music-2000.com
 
 
