@@ -5,7 +5,7 @@ v1.1.0
 https://djomnimaga.music-2000.com
 
 
-* INTRODUCTION *
+INTRODUCTION
 Thank you for downloading Darkblaster for TI graphing calculators. Inspired by Lufia, Quest 64,
 Dragon Quest, Illusiat and Mana Force series, Darkblasters is a role-playing game meant to
 showcase pure TI-BASIC graphical capabilities while trying to keep speed as fast as possible.
@@ -14,7 +14,7 @@ sprite-based graphics. No ASM/Axe/Grammer lib were used, in order to ensure full
 with 15 MHz z80 calculator models that lacks official ASM support.
 
 
-* GETTING STARTED *
+GETTING STARTED
 Before installing, make sure to have enough RAM for the game. The game file takes 16 KB and
 you need an extra 3 or 4 KB during runtime.
 
@@ -40,7 +40,7 @@ Installing and Playing
 -Press 2nd once the title screen has loaded to bring up the menu then choose an option.
 
 
-* THE STORY *
+THE STORY
 A long time ago, mankind became nearly extinct after the entire world population did the Tide Pod
 eating challenge simultaneously. From the dead rose a new illness that transformed animals into
 monsters and many humnan survivors into Darkblasters, evil mages that look like knights.
@@ -49,7 +49,7 @@ Today, the Darkblasters stole the three crystals protecting the Kingdom of Walri
 the mages before they take over the world.
 
 
-* GAMEPLAY *
+GAMEPLAY
 Controls
 -F1-F5: Select options on screen when available/applicable
 -2ND & ALPHA: 1) Open/close menu or cancel an option when applicable
@@ -95,7 +95,7 @@ Items can be found either on the ground or by talking to NPC's.
 -Fairy: If you die, this automatically revives you to max HP.
 
 
-* F.A.Q. *
+F.A.Q.
 1) Q: When did you start working on this project?
    A: I started in late 2012, shortly after the color screen TI-84 Plus C Silver Edition got announced.
       It remained under indefinite hiatus as I moved to the CSE and later CE, though, but it got revived
@@ -136,19 +136,19 @@ Items can be found either on the ground or by talking to NPC's.
       the TI-82 Stats and the TI-83 (non-plus).
 
 
-* CREDITS *
+CREDITS
 -Feel free to use any part of the code if you give me some credits, but I would like to thanks
  everyone who contributed into getting TI-BASIC documentation and tricks out there, some of
  which made this game possible.
 -Tide Pod is a registered trademark and property of Procter & Gamble. Do not eat their products!
 
 
-* DISCLAIMERS *
+DISCLAIMERS
 -I will not be held responsible if any damage occurs to your calculator via the use of this product.
 -No animals, including walruses, were harmed during the making of this game.
 
 
-* CHANGELOG *
+CHANGELOG
 v1.1.0 (10/01/2021)
 -Doors CS 7 icon added.
 -The town is now much smaller and its NPCs easier to find.
