@@ -1,0 +1,1450 @@
+:"Darkblasters v1.1.0
+:"0100028006C00AA01FF01450145014501450145014501FF00AA006C002800100
+Normal:Full
+StoreGDB 1
+GridOff
+AxesOff
+FnOff 
+ZStandard
+84->Xmin
+~72->Ymin
+ZInteger
+ClrDraw
+Text(1,1,1
+Text(0,1," 
+pxl-Test(6,1->E
+Goto TI
+Lbl ER
+For(V,47,52,5
+	Text(~1,V,4,sub(Str7,1,11
+	Text(~1,V,65," 
+End
+End
+Lbl TI
+ClrDraw
+"            ->Str7
+"|N
+Ans+Ans+Ans+Ans:Ans+Ans+Ans+Ans->Str1
+"invertedequal
+Ans+Ans+Ans+Ans:Ans+Ans+Ans+Ans->Str2
+For(Z,0,49,7)
+	If Z=7:21->Z
+	Text(~1,Z,1,Str1
+	Text(~1,Z,90,"|N
+End
+StorePic 0
+For(Z,0,49,7)
+	If Z=7:21->Z
+	Text(~1,Z,0,Str2
+	Horizontal ~Z-4
+	Pxl-On(Z+2,93
+End
+RecallPic 0
+Line(0,~5,94,~5,0
+Line(0,~22,94,~22,0
+StorePic 0
+{10,10,11,15,16,15,0,1,1,0,~1,~1,0,1,1,0,~1,~1->L1
+For(theta,1,3
+	For(Z,1,12
+		Text(~1,L1(theta)+L1(Z+6),L1(theta+3)+8Z-22,sub("DARKBLASTERS",Z,1
+	End
+	RecallPic 0
+	StorePic 0
+End
+1->W
+For(Z,1,12
+	L1(Z+6
+	If Z!=9
+	Pxl-On(17+Ans,8Z-8
+	Pxl-On(17+Ans,8Z-4
+	If Z!=2 and Z!=7 and Z!=8 and Z!=12
+	Pxl-On(10+Ans,8Z-8
+End
+Line(47,~25,40,~32,0
+Line(47,~25,54,~32,0
+Line(54,~32,54,~44,0
+Line(54,~44,47,~51,0
+Line(47,~51,40,~44,0
+Line(40,~44,40,~32,0
+Line(40,~44,47,~45,0
+Line(47,~45,54,~44,0
+Line(40,~33,47,~32,0
+Line(47,~32,54,~33,0
+StorePic 0
+Text(56,3,"(c)2021 DJ OMNIMAGA MUSIC
+{6,5,3,1,~1,~3,~5,~6->L1
+1->Z:5->theta
+Repeat W>=11 and W<=12
+	getKey->W
+	If W=21 or W=14 or W=15
+	Text(56,3,"        F1:BEGIN   F2:CONTINUE     
+	L1(Z->V:L1(theta->X
+	RecallPic 0
+	Line(47+V,~32,47+V,~44,0
+	Line(47+X,~32,47+X,~44,0
+	Line(47,~25,47+V,~32,0
+	Line(47,~25,47+X,~32,0
+	Line(47+V,~44,47,~51,0
+	Line(47+X,~44,47,~51,0
+	Z+1->Z
+	If Z>8:1->Z
+	theta+1->theta
+	If theta>8:1->theta
+	If W=45
+	Goto EX
+End
+ClrDraw
+0->X
+SetUpEditor |LDBLST
+34->dim(|LDBLST
+If W=11 or not(|LDBLST(1:Then
+	49->|N:89->I%:28->A:30->B:6->FV
+	9->dim(L3
+	{50,50,30,30,0,0,0,10,0,3,3,9,6
+	10Ans->L3
+	29->dim(L3
+	Text(0,0,"A LONG TIME AGO, MANKIND
+	Text(6,0,"NEARLY BECAME EXTINCT WHEN
+	Text(12,0,"THE ENTIRE WORLD
+	Text(18,0,"POPULATION DID THE TIDE-
+	Text(24,0,"POD CHALLENGE
+	Text(30,0,"SIMULTANEOUSLY.
+Repeat getKey:End
+	ClrDraw
+	Text(0,0,"FROM THE DEAD ROSE A NEW
+	Text(6,0,"ILLNESS THAT TRANSFORMED
+	Text(12,0,"ANIMALS INTO MONSTERS AND
+	Text(18,0,"MANY HUMAN SURVIVORS INTO
+	Text(24,0,"DARKBLASTERS, EVIL MAGES
+	Text(30,0,"THAT LOOK LIKE KNIGHTS.
+Repeat getKey:End
+	ClrDraw
+	Text(0,0,"NOW THEY STOLE THE THREE
+	Text(6,0,"CRYSTALS PROTECTING THE
+	Text(12,0,"KINGDOM OF WALRITIA.
+	Text(18,0,"YOU MUST DEFEAT THE
+	Text(24,0,"DARKBLASTERS BEFORE THEY
+	Text(30,0,"TAKE OVER THE WORLD!
+Repeat getKey:End
+	ClrDraw
+Else
+	|LDBLST->L1
+	L1->L3
+	L1(30->|N
+	L1(31->I%
+	L1(32->A
+	L1(33->B
+	If FV=6:Then
+		49->|N:89->I%:28->A:30->B
+	End
+	L1(34->FV
+DelVar L129->dim(L3
+End
+Archive |LDBLST
+While 1
+	randInt(25,50->R
+	sub("KX[ybar][xbar]LXHI[xbar]8VY5invertedequalLLB05yWtE'",4FV-3,4->Str9
+	For(Z,0,2
+		If Z!=1:Then
+			Line(0,~50-Z,61,~50-Z
+			Line(0,~62+Z,61,~62+Z
+			Line(Z,~50,Z,~62
+			Line(61-Z,~50,61-Z,~62
+		Else
+			For(W,51,54,3:Text(~1,W,1,"          
+			End
+			Text(53,4,sub("SACRED TEMPLE OLD ALIEN BASEFOREST OF LIFEDARKBLASTERIA FIRE CAVERN   WALRITIA TOWN ",14FV-13,14
+		End
+		If Z!=1:Then
+			Line(72,~Z,94,~Z
+			Line(72,~44-Z,94,~44-Z
+			Line(72,~60-Z,94,~60-Z
+			Vertical 72+Z
+			Vertical 92+Z
+		End
+		Text(3+14Z,76,sub("HMS",Z+1,1)+"P
+		Text(9+14Z,76,L3(1+2Z
+	End
+	For(Z,47,52,5
+		Text(~1,Z,75,"  
+		Text(~1,Z,86," 
+	End
+	If FV=1:Then
+		{77,48,1,79,54,6,89,52,6,78,52,4+L3(18),88(L3(16)=0),56,3->L1
+		Text(~1,49,77,"++
+		Text(~1,51,79,"+B
+		StorePic 0
+		Text(~1,47,75,"++
+		Text(~1,53,80,"P^^T
+		If L3(18
+		Pxl-On(50,80
+	End
+	If FV=2:Then
+		{79,58,2,85,51,1,82,51,6,88,54,4+L3(19),87(L3(17)=0),56,3->L1
+		Text(~1,47,77,"1pi
+		Text(~1,52,77,"PhiB
+		StorePic 0
+		Text(~1,47,78,"==
+		Text(~1,52,78,"-~
+		If L3(19
+		Pxl-On(58,87
+	End
+	If FV=3:Then
+		{80,49,6,84,58,1,86,48,6,83,57,4+L3(20),82(L3(14)=0),53,3->L1
+		Text(~1,48,76,"[|F]H
+		Text(~1,52,77,"LJ
+		StorePic 0
+		Text(~1,48,78,"F+
+		Text(~1,53,81,"A-
+		If L3(20
+		Pxl-On(53,81
+	End
+	If FV=4:Then
+		50
+		{88not(L3(26)),Ans,3,84not(L3(27)),Ans,3,82not(L3(28)),Ans,3,78not(L3(29)),Ans,3,77(4=(L3(26)+L3(27)+L3(28)+L3(29))),54,3->L1
+		Text(~1,52,75,"-B
+		StorePic 0
+		Text(~1,52,76,"|N
+		Text(~1,50,78,"HH
+	End
+	If FV=5:Then
+		{86,57,6,85,54,1,79,56,6,78,52,4+L3(21),76(L3(15)=0),52,3->L1
+		Text(~1,47,77,"e!
+		Text(~1,51,76,"4+
+		StorePic 0
+		Text(~1,47,76,"u+
+		Text(~1,51,77,"-L
+		If L3(21
+		Pxl-On(49,77
+	End
+	If FV=6:Then
+		{88,48,6,89,49,6,90,50,6,91,50,6,90,48,6->L1
+		Pt-On(89,~49,2
+		Pxl-On(49,89
+		Pxl-On(47,88
+		Pxl-On(50,91
+		StorePic 0
+	End
+	RecallPic 0
+	"    ->Str2
+	For(Z,0,1
+		sub(Str9,1+Z,1
+		Str2+Ans+Ans+Ans+Ans->Str1
+		sub(Str9,3+Z,1
+		Str1+Ans+Ans+Ans+Ans->Str1
+		If Z:Then
+			Str1->Str5
+		Else
+			Str1->Str6
+		End
+	End
+	While R!=70 and Z!=22 and |N!=46 and |N!=60 and I%!=74 and I%!=92
+			For(Z,0,1
+				If Z:Then
+					Str5->Str1
+				Else
+					Str6->Str1
+				End
+				sub(Str1,5,4
+				Ans+sub(Str1,5-4pxl-Test(|N-1,I%),4)+Ans
+				Ans+Ans+sub(Str1,5+4pxl-Test(|N,I%-1),4
+				Ans+sub(Str1,9-8pxl-Test(|N-1,I%),4)+sub(Str1,5+4pxl-Test(|N,I%+1),4->Str0
+				If FV=6:Then
+					sub(Ans,1,26)+sub("WtPM",Z+2pxl-Test(|N,I%-1)+1,1)+sub(Ans,28,6)+sub("WtPM",Z+2pxl-Test(|N,I%+1)+1,1)+sub(Ans,35,2->Str0
+				End
+				sub(Str1,5-4pxl-Test(|N,I%-1),4)+sub(Str1,1,4)+sub(Str1,5-4pxl-Test(|N,I%+1),4
+				Str0+Ans+Ans+Ans->Str0
+				sub(Str1,5,4
+				Ans+sub(Str1,5-4pxl-Test(|N+1,I%),4)+Ans
+				Str0+Ans+Ans+Ans
+				If not(Z
+				Ans->Str3
+			End
+		For(theta,0,8
+			Text(~1,7theta,0,sub(Str3,12theta+1,12
+			StorePic 0
+			Text(~1,7theta,1,sub(Ans,12theta+1,12
+			RecallPic 0
+		End
+		StorePic 0
+		0->F
+		For(Z,1,5
+			If |N=L1(3Z-1) and I%=L1(3Z-2
+			Then
+				1->F
+				For(theta,0,1
+					If 6!=L1(3Z:Then
+						Text(~1,28,37-theta,sub("vw^^o^^'X^^oplotsquare,plotsquareplotcross",2L1(3Z)-theta,1
+					Else
+						Pt-On(38,~29,2
+						Pt-On(38,~32,3
+						Pxl-On(34,37
+						Pxl-On(34,39
+						Pxl-On(29,38
+						If FV=6 and not(fPart(.5|N:Then
+							Pxl-On(31,36
+							Pxl-On(31,40
+						End
+					End
+					If not(theta
+					StorePic 0
+					RecallPic 0
+				End
+			End
+		End
+		StorePic 0
+		0->C
+		0->D
+		0->Z
+		While R and Z!=22 and Z!=21 and A and A<56 and B and B<66 and F!=2
+			Text(A-C,B-D+1,"   
+			If E
+			Text(A-C+1,B-D+1,"   
+			Pt-On(B+2,~A-1,2
+			Pt-On(B+2,~A-4,3
+			Pxl-On(A+6,B+1
+			Pxl-On(A+6,B+3
+			Repeat Z
+				getKey->Z
+			End
+			6(~(Z=24)+(Z=26->D
+			7(~(Z=25)+(Z=34->C
+			If F=1 and A+C=28 and B+D=36
+			2->F
+			If not(pxl-Test(A+C,B+D:Then
+				A+C->A
+				B+D->B
+				If F!=2 and FV!=6 and (Z<21 or Z>23
+				R-1->R
+			Else
+				0->C:0->D
+			End
+		End
+		If A=0 or A=56 or B=0 or B=66
+		Then
+			If E
+			Text(A-C+1,B-D+1,"   
+			Text(A-C,B-D+1,"   
+		End
+		If R<=0 or Z=21:Then
+			For(theta,0,40,8
+				Text(~1,theta,0,Str7
+			End
+		End
+		If Z=22 or Z=21 or F=2 or not(R:Then
+			Line(71,~45,1,~45,0
+			Horizontal ~44
+			Horizontal ~46
+			For(theta,47,53,6
+				Text(~1,theta,0,Str7
+			End
+			Line(71,~61,1,~61,0
+			Horizontal ~60
+			Horizontal ~62
+			Line(0,~61,0,~45
+			Line(2,~61,2,~45
+			StorePic 0
+		End
+		If Z=22:Then
+			For([recursiven],~1,0
+				If [recursiven]
+				Goto SA
+			End
+			Text(47,4,"GAME SAVED.
+			0->Z
+		End
+		If not(R:Goto BA
+		If Z=21:Goto ME
+		If F=2:Goto EV
+		Lbl RT
+		If A=0:Then
+			49->A
+			|N-1->|N
+		End
+		If A=56:Then
+			7->A
+			|N+1->|N
+		End
+		If B=0:Then
+			60->B
+			I%-1->I%
+		End
+		If B=66:Then
+			6->B
+			I%+1->I%
+		End
+	End
+	If |N=60:Then
+		47->|N
+		If I%=81:Then
+			85->I%:5->FV
+		Else
+			If I%=85:Then
+				88->I%:6->FV
+			Else
+				If I%=80:Then
+					79->I%:2->FV
+				End
+			End
+		End
+	End
+	If |N=46
+	Then
+		59->|N
+		If I%=85:Then
+			81->I%:3->FV
+		Else
+			If I%=88:Then
+				85->I%:3->FV
+			Else
+				If I%=79:Then
+					80->I%:1->FV
+				End
+			End
+		End
+	End
+	If I%=92:Then
+		75->I%
+		If |N=56:Then
+			55->|N:4->FV
+		Else
+			If |N=50
+			1->FV
+		End
+	End
+	If I%=74:Then
+		91->I%
+		If |N=55:Then
+			56->|N:3->FV
+		Else
+			If |N=50
+			6->FV
+		End
+	End
+End
+End
+Lbl EV
+A-C->A
+B-D->B
+0->C
+0->D
+If FV=1:Then
+	If I%=77:1->C
+	If I%=89:4->C
+	If I%=78:5+(L3(18->C
+	If I%=79:Then
+		If not(L3(7:100->L3(7
+		Text(47,4,"YOU CAN NOW USE
+		Text(53,4,"AURA MAGIC!
+	End
+	If I%=88:9->C
+End
+If FV=2:Then
+	If I%=85:1->C
+	If I%=79:2->C
+	If I%=88:5+(L3(19->C
+	If I%=82:3->C
+	If I%=87:11->C
+End
+If FV=3:Then
+	If I%=84:1->C
+	If I%=86:4->C
+	If I%=83:5+(L3(20->C
+	If I%=80:Then
+		If not(L3(6:100->L3(6
+		Text(47,4,"YOU CAN NOW USE
+		Text(53,4,"GAIA MAGIC!
+	End
+	If I%=82:7->C
+End
+If FV=4:Then
+	If L3(14) and L3(15) and L3(16:Then
+		If I%=77:Then
+			12->C
+		Else
+			10->C
+			Text(47,4,"A MONSTER STATUE.\..
+			Text(53,4,"IT'S MOVING!
+		End
+	Else
+		Text(47,4,"A MONSTER STATUE.
+		Text(53,4,"NOTHING HERE.
+	End
+End
+If FV=5:Then
+	If I%=85:1->C
+	If I%=86:4->C
+	If I%=78:5+(L3(21->C
+	If I%=79:Then
+		If not(L3(9:300->L3(9
+		Text(47,4,"YOU CAN NOW USE
+		Text(53,4,"CURE MAGIC!
+	End
+	If I%=76:8->C
+End
+If FV=6:Then
+	6->C
+	If I%=88:Then
+		Text(47,4,"THE MONSTERS IN THE
+		Text(53,4,"FOREST ARE WEAKER.
+	End
+	If I%=89:Then
+		If 3=(L3(14)+L3(15)+L3(16
+		Then
+			For(theta,1,4
+				For([recursiven],~1,0
+					If [recursiven]
+					Goto ER
+				End
+				If theta=1:Then
+					Text(47,4,"WARRIOR, YOU HAVE
+					Text(53,4,"THE 3 CRYSTALS, SO
+				End
+				If theta=2:Then
+					Text(47,4,"IT'S TIME FOR YOU
+					Text(53,4,"TO GO DEFEAT MAOS,
+				End
+				If theta=3:Then
+					Text(47,4,"THE DARKBLASTERS
+					Text(53,4,"MASTER.
+				End
+				If theta=4:Then
+					Text(47,4,"GO TO THE EAST OF
+					Text(53,4,"THE FOREST.
+				Else
+					Repeat Z=21 or Z=22
+						getKey->Z
+					End
+				End
+			End
+		Else
+			For(theta,1,7
+				For([recursiven],~1,0
+					If [recursiven]
+					Goto ER
+				End
+				If theta=1:Then
+					Text(47,4,"WARRIOR, THE
+					Text(53,4,"DARKBLASTERS WILL
+				End
+				If theta=2:Then
+					Text(47,4,"INVADE THIS TOWN
+					Text(53,4,"IF YOU DON'T BEAT
+				End
+				If theta=3:Then
+					Text(47,4,"THEM AND THEIR
+					Text(53,4,"MASTER SOON.
+				End
+				If theta=4:Then
+					Text(47,4,"TO BEAT THEIR
+					Text(53,4,"MASTER YOU MUST
+				End
+				If theta=5:Then
+					Text(47,4,"FIRST DEFEAT THE
+					Text(53,4,"3 MAGES LOCATED
+				End
+				If theta=6:Then
+					Text(47,4,"OUTSIDE THIS TOWN.
+					Text(53,4,"TALK TO OTHERS,
+				End
+				If theta=7:Then
+					Text(47,4,"THEY MIGHT HAVE
+					Text(53,4,"ITEMS OR CLUES.
+				Else
+					Repeat Z=21 or Z=22
+						getKey->Z
+					End
+				End
+			End
+		End
+	End
+	If I%=90 and |N=50:Then
+		For(theta,1,4
+			For([recursiven],~1,0
+				If [recursiven]
+				Goto ER
+			End
+			If theta=1:Then
+				Text(47,4,"MY BROTHERS
+				Text(53,4,"WANDER AROUND
+			End
+			If theta=2:Then
+				Text(47,4,"THE AREAS NEARBY
+				Text(53,4,"TO TEACH MAGIC TO
+			End
+			If theta=3:Then
+				Text(47,4,"PEOPLE. TALK TO
+				Text(53,4,"THEM TO LEARN.
+			End
+			If theta=4:Then
+				Text(47,4,"HERE LET ME HEAL
+				Text(53,4,"YOUR HP AND MP.
+				L3(2->L3(1
+				L3(4->L3(3
+				Text(9,76,L3(1
+				Text(23,76,L3(3
+			Else
+				Repeat Z=21 or Z=22
+					getKey->Z
+				End
+			End
+		End
+	End
+	If I%=91:Then
+		For(theta,1,3
+			For([recursiven],~1,0
+				If [recursiven]
+				Goto ER
+			End
+			If theta=1:Then
+				Text(47,4,"THE FOREST IS
+				Text(53,4,"LOCATED TO THE
+			End
+			If theta=2:Then
+				Text(47,4,"NORTH AND YOU CAN
+				Text(53,4,"REACH
+			End
+			If theta=3:Then
+				Text(47,4,"DARBLASTERIA FROM
+				Text(53,4,"THERE.
+			Else
+				Repeat Z=21 or Z=22
+					getKey->Z
+				End
+			End
+		End
+	End
+	0->C
+	If I%=90 and |N=48:3->C
+End
+If C=1:Then
+	3->L3(22
+	Text(47,4,"THOSE HERBS HEAL
+	Text(53,4,"YOUR HP TO MAXIMUM.
+End
+If C=2:Then
+	1->L3(25
+	Text(47,4,"THIS FAIRY REVIVES
+	Text(53,4,"YOU ONCE YOU DIE.
+End
+If C=3:Then
+	3->L3(23
+	Text(47,4,"THOSE POTIONS CAN
+	Text(53,4,"CURE SICKNESS.
+End
+If C=4:Then
+	3->L3(24
+	Text(47,4,"THOSE ELIXIRS CAN
+	Text(53,4,"RESTORE MP TO MAX.
+End
+If C=5:Then
+	If FV=1:Then
+		Pxl-On(50,80
+		1->L3(18
+	End
+	If FV=2:Then
+		Pxl-On(58,87
+		1->L3(19
+	End
+	If FV=3:Then
+		Pxl-On(53,81
+		1->L3(20
+	End
+	If FV=5:Then
+		Pxl-On(49,77
+		1->L3(21
+	End
+	5->L1(12
+	Text(47,4,"SWITCH ACTIVATED.
+	Text(53,4,"YOU HEAR A NOISE.
+End
+If C=6:Then
+	Text(47,4,"THIS SWITCH IS
+	Text(53,4,"ALREADY ACTIVATED.
+End
+If C>=7 and C<=9:Then
+	For(theta,1,2
+		For([recursiven],~1,0
+			If [recursiven]
+			Goto ER
+		End
+		If theta=1:Then
+			Text(47,4,"I AM ",sub("GAITOS CURATOSAURATOS",7C-48,7)," AND
+			Text(53,4,"YOU WILL NOT GET
+		End
+		If theta=2:Then
+			Text(47,4,"THE CRYSTAL OF
+			Text(53,4,sub("GAIALUNASTAR",4C-27,4),"!
+		Else
+			Repeat Z=21 or Z=22
+				getKey->Z
+			End
+		End
+	End
+	11+C->R
+End
+If C=10
+21->R
+If C=11
+Then
+	22->R
+	Text(47,4,"WANNA CHALLENGE
+	Text(53,4,"ME? GOOD LUCK!
+End
+If C=12:Then
+	23->R
+	For(Z,0,20
+		Line(0,~Z,71,~Z,Z<14
+		Line(0,~62+Z,71,~62+Z,Z<14
+	End
+	For(Z,0,1000
+	End
+	"    ->Str9
+	0->W
+	Repeat W=3
+		If W=0
+		Text(42,19,"I AM MAOS,
+		If W=1
+		Text(42,13,"THE MASTER OF
+		If W=2:Then
+			Text(42,5,"THE DARKBLASTERS!
+		Else
+			Repeat Z=21 or Z=31
+				getKey->Z
+			End
+			5->|P/Y
+		End
+		W+1->W
+	End
+End
+Repeat Z=21 or Z=31
+	getKey->Z
+End
+If C>6:Then
+	For([recursiven],~1,0
+		If [recursiven]
+		Goto ER
+	End
+	For(theta,0,40,8
+		Text(~1,theta-4(theta=40),0,Str7
+	End
+	StorePic 0
+	Goto BA
+	Lbl RB
+	If R>=18 and R<=20:Then
+		Text(53,4,"GOT ",sub("GAIALUNASTAR",4R-71,4)," CRYSTAL!
+		1->L3(R-4
+		0->L1(13
+		Repeat Z=21 or Z=31
+			getKey->Z
+		End
+		For(theta,0,56,8
+			Text(~1,theta,0,Str7
+		End
+	End
+	If R=22:Then
+		1->L3(17
+		0->L1(13
+	End
+	If R>21:Then
+		StorePic 0
+		For(Z,1,2
+			For(theta,0,35,7
+				Text(~1,theta,0,Str7
+			End
+			RecallPic 0
+		For(W,0,1000:End
+		End
+		For(Z,~43,13
+			If ~38<Z
+			Line(0,Z-6,71,Z-6,0
+			If ~40<Z
+			Line(0,Z-4,71,Z-4,0
+			StorePic 0
+			If ~42<Z
+			Line(0,Z-2,71,Z-2,0
+			Line(0,Z,71,Z,0
+			randrandrandrand
+			RecallPic 0
+		End
+		For(theta,40,56,8
+			Text(~1,theta,0,Str7
+		End
+	End
+		If R=21:Then
+			If I%=88:Then
+				1->L3(26
+				0->L1(1
+			End
+			If I%=84:Then
+				1->L3(27
+				0->L1(4
+			End
+			If I%=82:Then
+				1->L3(28
+				0->L1(7
+			End
+			If I%=78:Then
+				1->L3(29
+				0->L1(10
+			End
+			If 4=(L3(26)+L3(27)+L3(28)+L3(29
+			77->L1(13
+		End
+End
+0->C
+0->Z:1->F
+If R=23:Then
+	ClrDraw
+	Text(0,0,"YOU HAVE SAVED THE KINGDOM
+	Text(6,0,"OF WALRITIA FROM THE THREE
+	Text(12,0,"DARKBLASTER MAGES AND
+	Text(18,0,"THEIR MASTER. PEACE HAS
+	Text(24,0,"NOW RETURNED, BUT FOR HOW
+	Text(30,0,"LONG?
+Repeat getKey:End
+	ClrDraw
+	Text(0,0,"THOSE FOUR MAGES WERE ONLY
+	Text(6,0,"FOUR OUT OF MANY AND NO
+	Text(12,0,"ONE KNOWS THE OTHERS'
+	Text(18,0,"PLANS. YOU SHALL NOW REST
+	Text(24,0,"FOR HOW LONG IT WILL TAKE
+	Text(30,0,"UNTIL YOUR NEXT JOURNEY.
+Repeat getKey:End
+	ClrDraw
+	Text(28,33,"THE END
+Repeat getKey:End
+	ClrDraw
+End
+If R=23:Goto TI
+Goto RT
+Lbl BA
+If R=0
+3FV+randInt(0,2->R
+If R=3
+" xy  yx  {}  '' -<I==Ã>- db  H! 
+If R=4
+" g  Ã qApq8p X  Delta 
+If R=5
+"^theta--V^
+If R=6 or R=21
+" Ã  Ã >=8**8<= Omega  Omega 
+If R=7
+"-oooo >=oooo =8plotsquareplotsquare8>=<=8plotsquareplotsquare8=-8  8 >=8 sigma8  ^^ooo^^o= ^^ooo^^o>=
+If R=8
+" (}  {) oÃ=oo=Ãov)(VV)(v wW  Ww 
+If R=9 or R=10 or R=15 or R=13
+" [|d]  [|b] <X**X> Y  Y >=8<>8<= V  V 
+If R=11
+"sigmathetaalphao0o [ybar]  V 
+If R=12
+" o  ^^o theta!88*theta8>=thetatheta<=8
+If R=14
+" oo  oo -[xbar][xbar]==[ybar][ybar]- GG  thetatheta  ^^T^^T  ^^T^^T 
+If R=16
+"^w^^w^ ^  ^ 
+If R=17
+" lambdaÃ¼|NÃ¡9
+If R=18
+" PhiDelta  DeltaPhi 
+If R=19
+" *o  o* 
+If R=20
+" Omega8  8Omega 
+If R>=18 and R<=20
+Ans+"M[xbar]UWWU[xbar]M'H8'^^o8H^^o d!  !b 
+If R=22
+"0808080808088080808080808 plotdot[xbar]>=  o8 plotdot00  8o  <=[xbar]  88  plotdot ,,  plotdot 00    ,,    88  {!=!=!=!=)plotdot 00plotdot (8888}  8808080808080080808080808
+If R=23:Then
+	Line(71,~45,1,~45,0:Horizontal ~44:Horizontal ~46
+	For(theta,47,53,6
+		Text(~1,theta,0,Str7
+	End
+	Line(71,~61,1,~61,0:Horizontal ~60:Horizontal ~62
+	Line(0,~61,0,~45:Line(2,~61,2,~45
+	StorePic 0
+	"   plotsquare +M plotcross      plotcross M+ plotsquare    plotsquare  ^^o*Omega(  plotcross  plotcross  )Omega*^^o  plotsquare plotsquare ^^o^M[xbar]UW!=^ plotcrossplotcross ^!=WU[xbar]M^^^o plotsquare plotsquare<\=*H8^^o^^^oplotcross  plotcross>\=^^o8H^^Phiplotsquare    plotsquare d! plotcross      plotcross !b plotsquare   
+End
+Ans->Str3
+If R=3
+{165,3,65,81,1,1,1,1,1,2,1,4,4,1
+If R=4
+{205,3,75,81,1,1,2,2,1,1,1,3,3,1
+If R=5
+{135,3,70,100,2,3,3,1,1,1,2,1,3,1
+If R=6
+{335,4,95,1,1,1,3,1,1,1,0,1,3,7
+If R=7
+{600,5,1,140,2,2,2,2,2,0,2,4,6,1
+If R=8
+{360,4,120,1,1,1,4,1,1,1,0,4,4,1
+If R=9 or R=10
+{35,1,5,11,1,1,3,1,1,1,1,1,3,1
+If R=11
+{45,1,8,13,1,1,2,1,1,2,1,2,3,1
+If R=12
+{1|E3,6,200,1,4,1,1,1,1,1,2,3,3,1
+If R=13
+{700,7,220,250,3,2,3,2,3,0,0,3,3,1
+If R=14
+{935,6,185,1,1,1,3,1,1,0,2,4,4,1
+If R=15
+{60,2,35,0,3,3,3,3,3,1,1,2,3,19
+If R=16
+{55,2,35,41,1,1,2,2,1,0,1,2,3,1
+If R=17
+{75,2,41,0,1,1,1,1,1,1,1,3,1,1
+If R=18
+{200,10,25,31,1,2,2,1,1,0,2,4,4,1
+If R=19
+{600,13,65,75,1,2,4,2,1,1,0,4,4,1
+If R=20
+{1800,16,100,110,2,2,3,3,2,2,0,4,4,1
+If R=21
+{2500,20,220,300,1,4,2,2,1,0,1,3,3,1
+If R=22
+{1|E4,100,450,550,1,4,2,2,1,0,0,5,12,1
+If R=23
+{15|E3,0,750,1200,3,1,4,2,5,1,1,5,12,1
+Ans->L4
+For(X,1,4)
+	If X!=2
+	10L4(X->L4(X
+End
+L4(12->PV
+L4(13->L
+L4(14->PMT
+For(X,0,1
+	For(theta,0,1)
+		If theta
+		StorePic 0
+		sub(Str9,theta+2X+1,1
+		Ans+Ans+Ans:Ans+Ans+Ans+Ans
+		Text(~1,7X+1,theta,Ans
+		RecallPic 0
+	End
+End
+For(Z,1,PV
+	For(theta,0,1
+		StorePic 0
+		Text(~1,24+7Z-4PV-1(PV=5),36-3L+theta,sub(Str3,PMT+2LZ-2L+Ltheta,L
+		RecallPic 0
+	End
+End
+For(Z,0,2
+	If Z!=1:Then
+		Line(0,~Z,46,~Z
+		Line(0,~12+Z,46,~12+Z
+		Line(Z,0,Z,~12
+		Line(46-Z,0,46-Z,~12
+	Else
+		For(W,1,4,3:Text(~1,W,1,"       
+			Text(~1,W,40," 
+		End
+		Text(3,4,sub("SIAMETROLLDUCK-FISH EVIL BAT  SENTINEL  DARK MIST W-1337    SLIME     SLIME     GIANT BEE DEVOURER  ESPYLACOPAOVERSEER  MEGA FLY  CARNIVORA LOST ALIENGAITOS    CURATOS   AURATOS   GUARDIAN  EVIL WALL MAOS      ",10R-29,10
+	End
+End
+StorePic 0
+0->PMT
+1->L
+0->Q
+0->N
+While L!=99 and L3(1)>0 and 0<L4(1
+	not(PMT->PMT
+	If PMT:Then
+		While L>0 and L<99
+			For(W,47,52,5
+				Text(~1,W,3,sub("              ",1,11+3(L=2
+				Text(~1,W,66+20(L=2)," 
+			End
+			If L=2 and Z=21
+			RecallPic 0
+			If L=1:Then
+				Text(47,4,"F1: FIGHT
+				Text(47,41,"F2: MAGIC
+				Text(53,4,"F3: ITEM
+				Text(53,41,"F4: FLEE
+			End
+			If L=2:Then
+				Line(72,~61,74,~61,0
+				If L3(6
+				Text(47,4,"F1:GAIA M",L3(10
+				If L3(7
+				Text(47,49,"F2:AURA M",L3(11
+				Text(53,4,"F3:WALL M",L3(12
+				If L3(9
+				Text(53,49,"F4:CURE M",L3(13
+			End
+			If L=3:Then
+				If L3(22
+				Text(47,4,"F1 HERB",L3(22
+				If L3(23
+				Text(47,35,"F2 POTION",L3(23
+				If L3(24
+				Text(53,4,"F3 ELIXIR ",L3(24
+				If L3(25
+				Text(53,52,"FAIRY
+			End
+			If L<5:Then
+				Repeat Z>=11 and Z<=14 or Z=21 or Z=31
+					getKey->Z
+					If Z=45:Goto EX
+				End
+			End
+			If L>=5 and L<=13
+			Goto AT
+			Lbl R2
+			If L=3:Then
+				For(theta,22,24)
+					If Z=(theta-11) and L3(theta:theta-12->L
+				End
+			End
+			If L=2:Then
+				For(V,47,52,5
+					Text(~1,V,3,Str7,"   
+				End
+				RecallPic 0
+				For(theta,10,13)
+					If Z=(theta+1) and L3(theta-4) and L3(3)>=L3(theta:theta-4->L
+				End
+			End
+			If L=1:Then
+				If Z=11:5->L
+				If Z=12:2->L
+				If Z=13:3->L
+				If Z=14:(R<18)99randInt(0,1->L
+			End
+			If Z=31 or Z=21:1->L
+		End
+	Else
+		If R=23:Then
+			L4(|P/Y->L
+			|P/Y+1->|P/Y
+			If |P/Y>9
+			5->|P/Y
+		Else
+			L4(randInt(5,9->L
+		End
+		If L=3 and Q=1
+		1->L
+		If L
+		Goto AE
+		Lbl R3
+		For([recursiven],~1,0
+			If [recursiven]
+			Goto ER
+		End
+		StorePic 0
+	End
+	If L!=99:1->L
+	If Q
+	O-int(.02L3(2->O
+	If O<=~1|E4
+	~9999->O
+	If O>=1|E4
+	9999->O
+	If P>=1|E4
+	9999->P
+	If fPart(O:Then
+		L3(4->L3(3
+		Text(47,4,"MP",L3(4)," TO YOU
+	Else
+		If O:Text(53,4,abs(O)," "+sub("DMG HEAL",4(O>0)+1,4)+" TO YOU
+		If P:Text(47,4,P," DMG TO ENEMY
+		If PMT=0 and (P or O!=0:Then
+			For(Z,0,500
+			End
+			For([recursiven],~1,0
+				If [recursiven]
+				Goto ER
+			End
+		End
+		O+L3(1->L3(1
+		If L3(1)>L3(2
+		L3(2->L3(1
+		If 0>L3(1
+		0->L3(1
+		L4(1)-P->L4(1
+		If 0>L4(1
+		0->L4(1
+	End
+	If L3(25) and not(L3(1:Then
+		0->L3(25
+		L3(2->L3(1
+		For([recursiven],~1,0
+			If [recursiven]
+			Goto ER
+		End
+		Text(47,4,"YOU GOT REVIVED
+		Text(53,4,"BY THE FAIRY!
+		For(Z,0,500
+		End
+	End
+	Text(~1,9,80,"  
+	Text(9,76,L3(1
+	Text(~1,23,80,"  
+	Text(23,76,L3(3
+	0->O
+	0->P
+	Text(3,76,sub("HP  SICKWALLW/SI",4Q+8(N!=0)+1,4
+	StorePic 0
+End
+If 0>=L3(1:Goto TI
+If 0>=L4(1:Then
+	For(Z,0,600
+	End
+	For([recursiven],~1,0
+		If [recursiven]
+		Goto ER
+	End
+	Text(47,4,"VICTORY!
+	Text(3,76,"HP        
+	10L4(2)+L3(1->L3(1
+	10L4(2)+L3(2->L3(2
+	6L4(2)+L3(3->L3(3
+	6L4(2)+L3(4->L3(4
+	L3(5)+L4(2->L3(5
+	For(Z,1,5)
+		If 1|E4<=L3(Z
+		9999->L3(Z
+	End
+	Text(9,76,L3(1
+	Text(23,76,L3(3
+	Text(37,76,L3(5
+	0->Q
+	0->N
+	If R<22:Then
+		For(theta,0,3
+			For(Z,15,39,4
+				Line(18,~Z-theta,53,~Z-theta,0
+			End
+		End
+	End
+End
+If R>17:Then
+	Goto RB
+Else
+	randInt(25,50->R
+	Goto RT
+End
+Lbl ME
+For(Z,0,2,2
+	Horizontal ~Z
+	Vertical Z
+	Line(46,~16-Z,0,~16-Z
+	Line(44+Z,~18,44+Z,0
+End
+StorePic 0
+If L3(6:Then
+	Text(19,4,"GAIA   MP:",L3(10
+	Text(19,46,"XP:",L3(6
+End
+If L3(7:Then
+	Text(25,4,"AURA   MP:",L3(11
+	Text(25,46,"XP:",L3(7
+End
+Text(31,4,"WALL   MP:",L3(12
+Text(31,46,"XP:",L3(8
+If L3(9:Then
+	Text(37,4,"CURE   MP:",L3(13
+	Text(37,46,"XP:",L3(9
+	Text(3,48,"F4: USE
+	Text(9,55,"CURE
+End
+If L3(22
+Text(47,4,"F1:HERB ",L3(22
+If L3(23
+Text(47,43,"POTION ",L3(23
+If L3(24
+Text(53,4,"F3:ELIXIR ",L3(24
+If L3(25
+Text(53,52,"FAIRY
+19->theta
+Repeat Z=21 or Z=31
+	getKey->Z
+	If Z=45:Goto EX
+	If Z=11 and L3(22) and L3(1)<L3(2:Then
+		L3(22)-1->L3(22
+		L3(2->L3(1
+		Text(47,31,L3(22
+		If not(L3(22:Then
+			For(Z,48,52
+				Line(4,~Z,33,~Z,0
+			End
+		End
+		Text(9,76,L3(1
+	End
+	If Z=13 and L3(3)<L3(4) and L3(24:Then
+		L3(24)-1->L3(24
+		L3(4->L3(3
+		Text(53,39,L3(24
+		If not(L3(24:Then
+			For(Z,54,58
+				Line(4,~Z,41,~Z,0
+			End
+		End
+		Text(23,76,L3(3
+	End
+	If Z=14 and L3(9) and L3(1)<L3(2) and L3(3)>=L3(13:Then
+		L3(1)+L3(9->L3(1
+		If L3(1)>L3(2
+		L3(2->L3(1
+		L3(3)-L3(13->L3(3
+		9+L3(9->L3(9
+		If 1|E4<=L3(9
+		9999->L3(9
+		2+L3(13->L3(13
+		If 255<L3(13
+		255->L3(13
+		Text(~1,23,80,"  
+		Text(23,76,L3(3
+		Text(9,76,L3(1
+		Text(37,33,L3(13
+		Text(37,56,L3(9
+	End
+	If Z=22:Then
+		For([recursiven],~1,0
+			If [recursiven]
+			Goto SA
+		End
+	End
+	StorePic 0
+	theta+1->theta
+	If theta=62 or theta=20 or theta=40 or theta=60:Then
+		For(W,3,7,4
+			Text(~1,W,3,"       
+		End
+		Line(44,~3,44,~14
+	End
+	If theta=62:Then
+		Text(3,4,"GAME SAVED!
+		1->theta
+	End
+	If theta=20:Then
+		Text(3,4,"MODE:SAVE
+		Text(9,4,"CLEAR:EXIT
+	End
+	If theta=40:Then
+		If L3(14)+L3(15)+L3(16:Then
+			For(W,14,16)
+				If L3(W
+				Text(~1,6,12W-159,"theta
+			End
+		Else
+			59->theta
+		End
+	End
+	If theta=60:Then
+		0->theta
+		Text(3,4,"MAX HP:",L3(2
+		Text(9,4,"MAX MP:",L3(4
+	End
+End
+Goto RT
+Lbl SA
+SetUpEditor |LDBLST
+augment(L3,{|N,I%,A,B,FV->L4
+L4->|LDBLST
+Archive |LDBLST
+61->theta
+End
+Lbl AT
+If L=5:Then
+	80+2L3(5->P
+	RecallPic 0
+	For(W,1,0,~1
+		For(Z,0,10,10
+			For(theta,0,2,2
+				Line(40-Z,~15-Z-theta,31-Z,~24-Z-theta,W
+				Line(49-Z,~14-Z-theta,40-Z,~23-Z-theta,W
+				Line(51-Z,~22-Z-theta,42-Z,~31-Z-theta,W
+				If W=0
+				RecallPic 0
+	End:End:End
+End
+If L=6:Then
+	L4(10)L3(6->P
+	L3(3)-L3(10->L3(3
+	1+L3(10
+	If 255<Ans
+	255
+	Ans->L3(10
+	L4(2
+	If 6<L4(2:6
+	4Ans+L3(6
+	If 1|E4<=Ans
+	9999
+	Ans->L3(6
+	For(Z,0,40,2
+		Line(36,~Z,28,~Z+4
+		Line(36,~Z,44,~Z+4
+		Pt-On(28,~Z+5
+		Pt-On(44,~Z+5
+		If Z=18
+		Line(28,0,44,0,0
+		Pt-Off(28,~Z+15
+		Pt-Off(44,~Z+15
+		Line(36,~Z+20,28,~Z+16,0
+		Line(36,~Z+20,44,~Z+16,0
+		RecallPic 0
+	End
+	For(Z,22,34,6
+		Text(~1,Z,28,"   
+		RecallPic 0
+	End
+End
+If L=7:Then
+	L4(11)L3(7->P
+	L3(3)-L3(11->L3(3
+	1+L3(11
+	If 255<Ans
+	255
+	Ans->L3(11
+	L4(2
+	If 6<L4(2:6
+	4Ans+L3(7
+	If 1|E4<=Ans
+	9999
+	Ans->L3(7
+	For(Z,1,5
+		For(theta,0,35,7
+			Text(~1,theta,0,Str7
+		End
+		randrandrand
+		RecallPic 0
+	End
+End
+If L=8:Then
+	L3(8->N
+	L3(3)-L3(12->L3(3
+	3+L3(12
+	If 255<Ans
+	255
+	Ans->L3(12
+	L4(2
+	If 6<L4(2:6
+	2Ans+L3(8
+	If 1|E4<=Ans
+	9999
+	Ans->L3(8
+	RecallPic 0
+	For(Z,0,11
+		Text(~1,36,6Z,"^
+		RecallPic 0
+		Pxl-On(39,6Z+5
+	End
+For(Z,0,300:End
+	Text(~1,36,0,Str7
+	RecallPic 0
+End
+If L=9:Then
+	L3(9->O
+	L3(3)-L3(13->L3(3
+	2+L3(13
+	If 255<Ans
+	255
+	Ans->L3(13
+	L4(2
+	If 6<L4(2:6
+	9Ans+L3(9
+	If 1|E4<=Ans
+	9999
+	Ans->L3(9
+	RecallPic 0
+	For(theta,1,0,~1
+		For(Z,0,3
+			Line(5,~25-Z,20,~25-Z,theta
+			Line(11+Z,~18,11+Z,~38,theta
+			Line(66,~25-Z,51,~25-Z,theta
+			Line(57+Z,~18,57+Z,~38,theta
+			If not(theta
+			RecallPic 0
+		End
+	End
+End
+If L=10:Then
+	L3(2->O
+	L3(22)-1->L3(22
+End
+If L=11:Then
+	0->Q
+	L3(23)-1->L3(23
+	Text(3,76,"HP        
+End
+If L=12:Then
+	1|E~4L3(4->O
+	L3(24)-1->L3(24
+End
+0->L
+Goto R2
+Lbl AE
+If L=1:Then
+	N-L4(3->O
+	If O>=0:~1->O
+	RecallPic 0
+	For(W,1,0,~1
+		For(theta,0,4,4
+			For(X,~15,31,23
+				Line(39+theta+X,~45,7+theta+X,~61,W
+				If W=0
+				RecallPic 0
+			End
+		End
+	End
+End
+If L=2:Then
+	N-L4(4->O
+	If O>=0:~1->O
+	For(Z,1,5
+		For(theta,36,1,~7
+			Text(~1,theta,0,Str7
+		End
+		randrandrand
+		RecallPic 0
+	End
+End
+If L=3:Then
+	1->Q
+	RecallPic 0
+	For(Z,1,20
+		randInt(27,43->W
+		randInt(0,71
+		Pt-On(Ans,~W,3
+		Pxl-Off(W,Ans
+		Pt-On(randInt(0,71),~randInt(27,43),2
+	End
+	For(Z,26,36,5
+		Text(~1,Z,0,Str7
+		RecallPic 0
+	End
+End
+If L=4:Then
+	~L3(1)+1+Q(int(.02L3(2->O
+	For(W,0,1
+		For(theta,1,0,~1
+			For(Z,0,2
+				Line(71,~44-Z,0,~60-Z,theta
+				Line(0,~44-Z,71,~60-Z,theta
+				If not(theta
+				RecallPic 0
+			End
+		End
+	End
+End
+If L=5:Then
+	~int(.9L3(2->O
+	RecallPic 0
+	For(theta,1,0,~1
+		For(Z,0,70,2
+			Line(Z,0,Z,~43,theta
+			Line(71-Z,0,71-Z,~43,theta
+		End
+	End
+	RecallPic 0
+End
+0->L
+Goto R3
+Lbl EX
+ClrDraw
+RecallGDB 1
+DelVar GDB1DelVar L1DelVar L3DelVar L4DelVar ADelVar BDelVar CDelVar DDelVar EDelVar FDelVar HDelVar LDelVar NDelVar ODelVar PDelVar QDelVar RDelVar VDelVar WDelVar ZDelVar thetaDelVar Pic0DelVar Str1DelVar Str2DelVar Str3DelVar Str5DelVar Str6DelVar Str7DelVar Str9DelVar Str0Disp 
