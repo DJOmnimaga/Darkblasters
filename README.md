@@ -23,23 +23,35 @@ you need an extra 3 or 4 KB during runtime.
 
 # Recommended Calculators
 TI-82 Advanced
+
 TI-83 Plus Silver Edition (OS 1.15 or higher required or the game won't run at all)
+
 TI-83 Plus.Fr USB
+
 TI-84 Plus
+
 TI-84 Plus Silver Edition
+
 TI-84 Plus-T
+
 TI-84 Pocket SE
+
 TI-84 Pocket.Fr
+
 TI-Nspire Clickpad with TI-84 Plus keypad on
 
 # Minimum Requirement (OS 1.15 or higher required)
 TI-82 Plus (twice slower)
+
 TI-83 Plus (twice slower)
+
 TI-83 Plus.Fr (twice slower)
 
 # Installing and Playing
 -Simply send DBLASTER.8xp to your calculator using your favorite linking software or website.
+
 -To launch the game, go to the PRGM menu, choose DBLASTER then hit enter twice.
+
 -Press 2nd once the title screen has loaded to bring up the menu then choose an option.
 
 
@@ -54,9 +66,13 @@ the mages before they take over the world.
 
 # Controls
 -F1-F5: Select options on screen when available/applicable
+
 -2ND & ALPHA: 1) Open/close menu or cancel an option when applicable
+
 -Arrows: Move around
+
 -MODE: Save your game (only works inside the menu or while exploring)
+
 -CLEAR: Quit the game (only works during battle, inside the in-game menu or the title screen)
 
 # Exploring and Fighting
@@ -84,52 +100,74 @@ spell. However, they also increase in strength in the process. Some enemies may 
 offensive spells. You also need to find some spells by talking to NPC's.
 
 -Gaia: Earth-elemental magic damage against the enemy
+
 -Aura: Holy-elemental magic damage against the enemy
+
 -Wall: Reduces damage taken for the entirety of the fight
+
 -Cure: Restores some HP
 
 # Items
 Items can be found either on the ground or by talking to NPC's.
 
 -Herb: Restores all your HP.
+
 -Potion: Cures sickness
+
 -Elixir: Restores all your MP.
+
 -Fairy: If you die, this automatically revives you to max HP.
 
 
 # F.A.Q.
 1) Q: When did you start working on this project?
-   A: I started in late 2012, shortly after the color screen TI-84 Plus C Silver Edition got announced.
+
+2) A: I started in late 2012, shortly after the color screen TI-84 Plus C Silver Edition got announced.
       It remained under indefinite hiatus as I moved to the CSE and later CE, though, but it got revived
       in Early September 2021.
+      
 2) Q: How did you get the idea for this project?
-   A: At first I wanted to make a small RPG using advanced TI-BASIC graphics to prepare myself for the CSE,
+
+3) A: At first I wanted to make a small RPG using advanced TI-BASIC graphics to prepare myself for the CSE,
       but as it turns out, the CSE did not support this game's drawing technique. In September 2021,
       Illusiat 20th anniversary was approaching and I happened to find a new TI-84 Plus for cheap somewhere,
       so nostalgia kicked in but instead of doing a remake of the first Illusiat games in the series
       I decided to create a new game, so I revived this project. The name Darkblasters was decided all the way
       back in 2012, although The Game, with a title screen 8xi file where the monster data is part of the pic
       was also considered before being scrapped for a more serious name.
+      
 3) Q: How I tren my clac on
-   A: Very carefully.
+
+4) A: Very carefully.
+   
 4) Q: How do i tern my clauacter on
-   A: Go away!
+
+5) A: Go away!
+   
 5) Q: What does F.A.Q stand for?
-   A: I said go away!
+
+6) A: I said go away!
+   
 6) Q: How are advanced sprite graphics displayed this fast?
-   A: By drawing a set of ASCII characters, storing the result into a picture, drawing a second set of
+
+7) A: By drawing a set of ASCII characters, storing the result into a picture, drawing a second set of
       characters on top of the others, preferably shifted 1 pixel to the right, then the picture is
       recalled so that the combined characters become sprites. Character combos were found either 
       using trial and error or using Builderboy's java TileMaker program from Omnimaga.
+      
 7) Q: How to make games like this?
-   A: Sorry, I am a very bad teacher without the required patience to help you guide you through the code,
+
+8) A: Sorry, I am a very bad teacher without the required patience to help you guide you through the code,
       but the code remains open and I also included the 2012 demo in the zip file if you want to focus
       more on the map engine. However, to draw double-layer text sprites, it works a bit like this
       (SourceCoder syntax):
 
       Text(~1,0,0,"<-=
+      
       StorePic 0
+      
       Text(~1,0,1,"=->     //In my game, I shift one layer by one pixel to the right.
+      
       RecallPic 0          //White pixels inside pictures are transparent.
       
       There you got some double-lance weapon sprite! Note that one major limitation of layered text sprites
@@ -142,33 +180,46 @@ Items can be found either on the ground or by talking to NPC's.
 -Feel free to use any part of the code if you give me some credits, but I would like to thanks
  everyone who contributed into getting TI-BASIC documentation and tricks out there, some of
  which made this game possible.
+ 
 -Tide Pod is a registered trademark and property of Procter & Gamble. Do not eat their products!
 
 
 # DISCLAIMERS
 -I will not be held responsible if any damage occurs to your calculator via the use of this product.
+
 -No animals, including walruses, were harmed during the making of this game.
 
 
 # CHANGELOG
 v1.1.0 (10/01/2021)
+
 -Doors CS 7 icon added.
+
 -The town is now much smaller and its NPCs easier to find.
+
 -If you save in town, reloading the game now respawns you in the middle.
+
 -Another string variable is no longer in use.
 
 v1.0.3 (09/28/2021)
 -Some minor speed improvements.
+
 -More optimizing done.
+
 -The game now uses fewer real variables, lists and strings.
+
 -The disintegrating boss animation for the last two bosses is now smoother and flickers much less.
 
 v1.0.2 (09/23/2021)
+
 -More optimizing done. Saved about 140 bytes.
 
 v1.0.1 (09/20/2021)
+
 -Some minor optimizations done
+
 -Now appears in MirageOS
 
 v1.0.0 (09/15/2021)
+
 -Initial release
