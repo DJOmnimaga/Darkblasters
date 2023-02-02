@@ -1,4 +1,4 @@
-:"Darkblasters v1.1.0
+:"Darkblasters v1.2.0
 :"0100028006C00AA01FF01450145014501450145014501FF00AA006C002800100
 Normal:Full
 StoreGDB 1
@@ -22,7 +22,8 @@ End
 End
 Lbl TI
 ClrDraw
-"            ->Str7
+"       ->Str4
+Str4+"     ->Str7
 "|N
 Ans+Ans+Ans+Ans:Ans+Ans+Ans+Ans->Str1
 "invertedequal
@@ -71,13 +72,13 @@ Line(47,~45,54,~44,0
 Line(40,~33,47,~32,0
 Line(47,~32,54,~33,0
 StorePic 0
-Text(56,3,"(c)2021 DJ OMNIMAGA MUSIC
+Text(56,0,"'21-23 DJO (WOMP OPTIMIZED)
 {6,5,3,1,~1,~3,~5,~6->L1
 1->Z:5->theta
 Repeat W>=11 and W<=12
 	getKey->W
 	If W=21 or W=14 or W=15
-	Text(56,3,"        F1:BEGIN   F2:CONTINUE     
+	Text(56,0,Str7+"F1:BEGIN F2:CONTINUE"+Str7
 	L1(Z->V:L1(theta->X
 	RecallPic 0
 	Line(47+V,~32,47+V,~44,0
@@ -98,7 +99,7 @@ ClrDraw
 SetUpEditor |LDBLST
 34->dim(|LDBLST
 If W=11 or not(|LDBLST(1:Then
-	49->|N:89->I%:28->A:30->B:6->FV
+	49->M:89->J:28->A:30->B:6->I
 	9->dim(L3
 	{50,50,30,30,0,0,0,10,0,3,3,9,6
 	10Ans->L3
@@ -130,20 +131,20 @@ Repeat getKey:End
 Else
 	|LDBLST->L1
 	L1->L3
-	L1(30->|N
-	L1(31->I%
+	L1(30->M
+	L1(31->J
 	L1(32->A
 	L1(33->B
-	If FV=6:Then
-		49->|N:89->I%:28->A:30->B
+	If I=6:Then
+		49->M:89->J:28->A:30->B
 	End
-	L1(34->FV
+	L1(34->I
 DelVar L129->dim(L3
 End
 Archive |LDBLST
 While 1
 	randInt(25,50->R
-	sub("KX[ybar][xbar]LXHI[xbar]8VY5invertedequalLLB05yWtE'",4FV-3,4->Str9
+	sub("KX[ybar][xbar]LXHI[xbar]8VY5invertedequalLLB05yWtE'",4I-3,4->Str9
 	For(Z,0,2
 		If Z!=1:Then
 			Line(0,~50-Z,61,~50-Z
@@ -151,9 +152,9 @@ While 1
 			Line(Z,~50,Z,~62
 			Line(61-Z,~50,61-Z,~62
 		Else
-			For(W,51,54,3:Text(~1,W,1,"          
+			For(W,51,54,3:Text(~1,W,1,"   "+Str4
 			End
-			Text(53,4,sub("SACRED TEMPLE OLD ALIEN BASEFOREST OF LIFEDARKBLASTERIA FIRE CAVERN   WALRITIA TOWN ",14FV-13,14
+			Text(53,4,sub("SACRED TEMPLE OLD ALIEN BASEFOREST OF LIFEDARKBLASTERIA FIRE CAVERN   WALRITIA TOWN ",14I-13,14
 		End
 		If Z!=1:Then
 			Line(72,~Z,94,~Z
@@ -169,7 +170,7 @@ While 1
 		Text(~1,Z,75,"  
 		Text(~1,Z,86," 
 	End
-	If FV=1:Then
+	If I=1:Then
 		{77,48,1,79,54,6,89,52,6,78,52,4+L3(18),88(L3(16)=0),56,3->L1
 		Text(~1,49,77,"++
 		Text(~1,51,79,"+B
@@ -179,7 +180,7 @@ While 1
 		If L3(18
 		Pxl-On(50,80
 	End
-	If FV=2:Then
+	If I=2:Then
 		{79,58,2,85,51,1,82,51,6,88,54,4+L3(19),87(L3(17)=0),56,3->L1
 		Text(~1,47,77,"1pi
 		Text(~1,52,77,"PhiB
@@ -189,7 +190,7 @@ While 1
 		If L3(19
 		Pxl-On(58,87
 	End
-	If FV=3:Then
+	If I=3:Then
 		{80,49,6,84,58,1,86,48,6,83,57,4+L3(20),82(L3(14)=0),53,3->L1
 		Text(~1,48,76,"[|F]H
 		Text(~1,52,77,"LJ
@@ -199,15 +200,15 @@ While 1
 		If L3(20
 		Pxl-On(53,81
 	End
-	If FV=4:Then
+	If I=4:Then
 		50
 		{88not(L3(26)),Ans,3,84not(L3(27)),Ans,3,82not(L3(28)),Ans,3,78not(L3(29)),Ans,3,77(4=(L3(26)+L3(27)+L3(28)+L3(29))),54,3->L1
 		Text(~1,52,75,"-B
 		StorePic 0
-		Text(~1,52,76,"|N
+		Text(~1,52,76,"M
 		Text(~1,50,78,"HH
 	End
-	If FV=5:Then
+	If I=5:Then
 		{86,57,6,85,54,1,79,56,6,78,52,4+L3(21),76(L3(15)=0),52,3->L1
 		Text(~1,47,77,"e!
 		Text(~1,51,76,"4+
@@ -217,7 +218,7 @@ While 1
 		If L3(21
 		Pxl-On(49,77
 	End
-	If FV=6:Then
+	If I=6:Then
 		{88,48,6,89,49,6,90,50,6,91,50,6,90,48,6->L1
 		Pt-On(89,~49,2
 		Pxl-On(49,89
@@ -238,7 +239,7 @@ While 1
 			Str1->Str6
 		End
 	End
-	While R!=70 and Z!=22 and |N!=46 and |N!=60 and I%!=74 and I%!=92
+	While R!=70 and Z!=22 and M!=46 and M!=60 and J!=74 and J!=92
 			For(Z,0,1
 				If Z:Then
 					Str5->Str1
@@ -246,16 +247,16 @@ While 1
 					Str6->Str1
 				End
 				sub(Str1,5,4
-				Ans+sub(Str1,5-4pxl-Test(|N-1,I%),4)+Ans
-				Ans+Ans+sub(Str1,5+4pxl-Test(|N,I%-1),4
-				Ans+sub(Str1,9-8pxl-Test(|N-1,I%),4)+sub(Str1,5+4pxl-Test(|N,I%+1),4->Str0
-				If FV=6:Then
-					sub(Ans,1,26)+sub("WtPM",Z+2pxl-Test(|N,I%-1)+1,1)+sub(Ans,28,6)+sub("WtPM",Z+2pxl-Test(|N,I%+1)+1,1)+sub(Ans,35,2->Str0
+				Ans+sub(Str1,5-4pxl-Test(M-1,J),4)+Ans
+				Ans+Ans+sub(Str1,5+4pxl-Test(M,J-1),4
+				Ans+sub(Str1,9-8pxl-Test(M-1,J),4)+sub(Str1,5+4pxl-Test(M,J+1),4->Str0
+				If I=6:Then
+					sub(Ans,1,26)+sub("WtPM",Z+2pxl-Test(M,J-1)+1,1)+sub(Ans,28,6)+sub("WtPM",Z+2pxl-Test(M,J+1)+1,1)+sub(Ans,35,2->Str0
 				End
-				sub(Str1,5-4pxl-Test(|N,I%-1),4)+sub(Str1,1,4)+sub(Str1,5-4pxl-Test(|N,I%+1),4
+				sub(Str1,5-4pxl-Test(M,J-1),4)+sub(Str1,1,4)+sub(Str1,5-4pxl-Test(M,J+1),4
 				Str0+Ans+Ans+Ans->Str0
 				sub(Str1,5,4
-				Ans+sub(Str1,5-4pxl-Test(|N+1,I%),4)+Ans
+				Ans+sub(Str1,5-4pxl-Test(M+1,J),4)+Ans
 				Str0+Ans+Ans+Ans
 				If not(Z
 				Ans->Str3
@@ -269,7 +270,7 @@ While 1
 		StorePic 0
 		0->F
 		For(Z,1,5
-			If |N=L1(3Z-1) and I%=L1(3Z-2
+			If M=L1(3Z-1) and J=L1(3Z-2
 			Then
 				1->F
 				For(theta,0,1
@@ -281,7 +282,7 @@ While 1
 						Pxl-On(34,37
 						Pxl-On(34,39
 						Pxl-On(29,38
-						If FV=6 and not(fPart(.5|N:Then
+						If I=6 and not(fPart(.5M:Then
 							Pxl-On(31,36
 							Pxl-On(31,40
 						End
@@ -314,13 +315,13 @@ While 1
 			If not(pxl-Test(A+C,B+D:Then
 				A+C->A
 				B+D->B
-				If F!=2 and FV!=6 and (Z<21 or Z>23
+				If F!=2 and I!=6 and (Z<21 or Z>23
 				R-1->R
 			Else
 				0->C:0->D
 			End
 		End
-		If A=0 or A=56 or B=0 or B=66
+		If A=56 or B=66 or not(AB
 		Then
 			If E
 			Text(A-C+1,B-D+1,"   
@@ -359,66 +360,66 @@ While 1
 		Lbl RT
 		If A=0:Then
 			49->A
-			|N-1->|N
+			M-1->M
 		End
 		If A=56:Then
 			7->A
-			|N+1->|N
+			M+1->M
 		End
 		If B=0:Then
 			60->B
-			I%-1->I%
+			J-1->J
 		End
 		If B=66:Then
 			6->B
-			I%+1->I%
+			J+1->J
 		End
 	End
-	If |N=60:Then
-		47->|N
-		If I%=81:Then
-			85->I%:5->FV
+	If M=60:Then
+		47->M
+		If J=81:Then
+			85->J:5->I
 		Else
-			If I%=85:Then
-				88->I%:6->FV
+			If J=85:Then
+				88->J:6->I
 			Else
-				If I%=80:Then
-					79->I%:2->FV
+				If J=80:Then
+					79->J:2->I
 				End
 			End
 		End
 	End
-	If |N=46
+	If M=46
 	Then
-		59->|N
-		If I%=85:Then
-			81->I%:3->FV
+		59->M
+		If J=85:Then
+			81->J:3->I
 		Else
-			If I%=88:Then
-				85->I%:3->FV
+			If J=88:Then
+				85->J:3->I
 			Else
-				If I%=79:Then
-					80->I%:1->FV
+				If J=79:Then
+					80->J:1->I
 				End
 			End
 		End
 	End
-	If I%=92:Then
-		75->I%
-		If |N=56:Then
-			55->|N:4->FV
+	If J=92:Then
+		75->J
+		If M=56:Then
+			55->M:4->I
 		Else
-			If |N=50
-			1->FV
+			If M=50
+			1->I
 		End
 	End
-	If I%=74:Then
-		91->I%
-		If |N=55:Then
-			56->|N:3->FV
+	If J=74:Then
+		91->J
+		If M=55:Then
+			56->M:3->I
 		Else
-			If |N=50
-			6->FV
+			If M=50
+			6->I
 		End
 	End
 End
@@ -428,38 +429,38 @@ A-C->A
 B-D->B
 0->C
 0->D
-If FV=1:Then
-	If I%=77:1->C
-	If I%=89:4->C
-	If I%=78:5+(L3(18->C
-	If I%=79:Then
+If I=1:Then
+	If J=77:1->C
+	If J=89:4->C
+	If J=78:5+(L3(18->C
+	If J=79:Then
 		If not(L3(7:100->L3(7
 		Text(47,4,"YOU CAN NOW USE
 		Text(53,4,"AURA MAGIC!
 	End
-	If I%=88:9->C
+	If J=88:9->C
 End
-If FV=2:Then
-	If I%=85:1->C
-	If I%=79:2->C
-	If I%=88:5+(L3(19->C
-	If I%=82:3->C
-	If I%=87:11->C
+If I=2:Then
+	If J=85:1->C
+	If J=79:2->C
+	If J=88:5+(L3(19->C
+	If J=82:3->C
+	If J=87:11->C
 End
-If FV=3:Then
-	If I%=84:1->C
-	If I%=86:4->C
-	If I%=83:5+(L3(20->C
-	If I%=80:Then
+If I=3:Then
+	If J=84:1->C
+	If J=86:4->C
+	If J=83:5+(L3(20->C
+	If J=80:Then
 		If not(L3(6:100->L3(6
 		Text(47,4,"YOU CAN NOW USE
 		Text(53,4,"GAIA MAGIC!
 	End
-	If I%=82:7->C
+	If J=82:7->C
 End
-If FV=4:Then
+If I=4:Then
 	If L3(14) and L3(15) and L3(16:Then
-		If I%=77:Then
+		If J=77:Then
 			12->C
 		Else
 			10->C
@@ -471,24 +472,24 @@ If FV=4:Then
 		Text(53,4,"NOTHING HERE.
 	End
 End
-If FV=5:Then
-	If I%=85:1->C
-	If I%=86:4->C
-	If I%=78:5+(L3(21->C
-	If I%=79:Then
+If I=5:Then
+	If J=85:1->C
+	If J=86:4->C
+	If J=78:5+(L3(21->C
+	If J=79:Then
 		If not(L3(9:300->L3(9
 		Text(47,4,"YOU CAN NOW USE
 		Text(53,4,"CURE MAGIC!
 	End
-	If I%=76:8->C
+	If J=76:8->C
 End
-If FV=6:Then
+If I=6:Then
 	6->C
-	If I%=88:Then
+	If J=88:Then
 		Text(47,4,"THE MONSTERS IN THE
 		Text(53,4,"FOREST ARE WEAKER.
 	End
-	If I%=89:Then
+	If J=89:Then
 		If 3=(L3(14)+L3(15)+L3(16
 		Then
 			For(theta,1,4
@@ -558,7 +559,7 @@ If FV=6:Then
 			End
 		End
 	End
-	If I%=90 and |N=50:Then
+	If J=90 and M=50:Then
 		For(theta,1,4
 			For([recursiven],~1,0
 				If [recursiven]
@@ -590,7 +591,7 @@ If FV=6:Then
 			End
 		End
 	End
-	If I%=91:Then
+	If J=91:Then
 		For(theta,1,3
 			For([recursiven],~1,0
 				If [recursiven]
@@ -615,7 +616,7 @@ If FV=6:Then
 		End
 	End
 	0->C
-	If I%=90 and |N=48:3->C
+	If J=90 and M=48:3->C
 End
 If C=1:Then
 	3->L3(22
@@ -638,19 +639,19 @@ If C=4:Then
 	Text(53,4,"RESTORE MP TO MAX.
 End
 If C=5:Then
-	If FV=1:Then
+	If I=1:Then
 		Pxl-On(50,80
 		1->L3(18
 	End
-	If FV=2:Then
+	If I=2:Then
 		Pxl-On(58,87
 		1->L3(19
 	End
-	If FV=3:Then
+	If I=3:Then
 		Pxl-On(53,81
 		1->L3(20
 	End
-	If FV=5:Then
+	If I=5:Then
 		Pxl-On(49,77
 		1->L3(21
 	End
@@ -772,19 +773,19 @@ If C>6:Then
 		End
 	End
 		If R=21:Then
-			If I%=88:Then
+			If J=88:Then
 				1->L3(26
 				0->L1(1
 			End
-			If I%=84:Then
+			If J=84:Then
 				1->L3(27
 				0->L1(4
 			End
-			If I%=82:Then
+			If J=82:Then
 				1->L3(28
 				0->L1(7
 			End
-			If I%=78:Then
+			If J=78:Then
 				1->L3(29
 				0->L1(10
 			End
@@ -820,7 +821,7 @@ If R=23:Goto TI
 Goto RT
 Lbl BA
 If R=0
-3FV+randInt(0,2->R
+3I+randInt(0,2->R
 If R=3
 " xy  yx  {}  '' -<I==Ã>- db  H! 
 If R=4
@@ -867,53 +868,54 @@ If R=23:Then
 End
 Ans->Str3
 If R=3
-{165,3,65,81,1,1,1,1,1,2,1,4,4,1
+{165,3,65,81,1,1,1,1,1,2,1,4,4
 If R=4
-{205,3,75,81,1,1,2,2,1,1,1,3,3,1
+{205,3,75,81,1,1,2,2,1,1,1,3,3
 If R=5
-{135,3,70,100,2,3,3,1,1,1,2,1,3,1
+{135,3,70,100,2,3,3,1,1,1,2,1,3
 If R=6
-{335,4,95,1,1,1,3,1,1,1,0,1,3,7
+{335,4,95,1,1,1,3,1,1,1,0,1,3
 If R=7
-{600,5,1,140,2,2,2,2,2,0,2,4,6,1
+{600,5,1,140,2,2,2,2,2,0,2,4,6
 If R=8
-{360,4,120,1,1,1,4,1,1,1,0,4,4,1
+{360,4,120,1,1,1,4,1,1,1,0,4,4
 If R=9 or R=10
-{35,1,5,11,1,1,3,1,1,1,1,1,3,1
+{35,1,5,11,1,1,3,1,1,1,1,1,3
 If R=11
-{45,1,8,13,1,1,2,1,1,2,1,2,3,1
+{45,1,8,13,1,1,2,1,1,2,1,2,3
 If R=12
-{1|E3,6,200,1,4,1,1,1,1,1,2,3,3,1
+{1|E3,6,200,1,4,1,1,1,1,1,2,3,3
 If R=13
-{700,7,220,250,3,2,3,2,3,0,0,3,3,1
+{700,7,220,250,3,2,3,2,3,0,0,3,3
 If R=14
-{935,6,185,1,1,1,3,1,1,0,2,4,4,1
+{935,6,185,1,1,1,3,1,1,0,2,4,4
 If R=15
-{60,2,35,0,3,3,3,3,3,1,1,2,3,19
+{60,2,35,0,3,3,3,3,3,1,1,2,3
 If R=16
-{55,2,35,41,1,1,2,2,1,0,1,2,3,1
+{55,2,35,41,1,1,2,2,1,0,1,2,3
 If R=17
-{75,2,41,0,1,1,1,1,1,1,1,3,1,1
+{75,2,41,0,1,1,1,1,1,1,1,3,1
 If R=18
-{200,10,25,31,1,2,2,1,1,0,2,4,4,1
+{200,10,25,31,1,2,2,1,1,0,2,4,4
 If R=19
-{600,13,65,75,1,2,4,2,1,1,0,4,4,1
+{600,13,65,75,1,2,4,2,1,1,0,4,4
 If R=20
-{1800,16,100,110,2,2,3,3,2,2,0,4,4,1
+{1800,16,100,110,2,2,3,3,2,2,0,4,4
 If R=21
-{2500,20,220,300,1,4,2,2,1,0,1,3,3,1
+{2500,20,220,300,1,4,2,2,1,0,1,3,3
 If R=22
-{1|E4,100,450,550,1,4,2,2,1,0,0,5,12,1
+{1|E4,100,450,550,1,4,2,2,1,0,0,5,12
 If R=23
-{15|E3,0,750,1200,3,1,4,2,5,1,1,5,12,1
+{15|E3,0,750,1200,3,1,4,2,5,1,1,5,12
+augment(Ans,{1+6(R=6)+18(R=15
 Ans->L4
 For(X,1,4)
 	If X!=2
 	10L4(X->L4(X
 End
-L4(12->PV
+L4(12->K
 L4(13->L
-L4(14->PMT
+L4(14->G
 For(X,0,1
 	For(theta,0,1)
 		If theta
@@ -924,10 +926,10 @@ For(X,0,1
 		RecallPic 0
 	End
 End
-For(Z,1,PV
+For(Z,1,K
 	For(theta,0,1
 		StorePic 0
-		Text(~1,24+7Z-4PV-1(PV=5),36-3L+theta,sub(Str3,PMT+2LZ-2L+Ltheta,L
+		Text(~1,24+7Z-4K-1(K=5),36-3L+theta,sub(Str3,G+2LZ-2L+Ltheta,L
 		RecallPic 0
 	End
 End
@@ -938,23 +940,23 @@ For(Z,0,2
 		Line(Z,0,Z,~12
 		Line(46-Z,0,46-Z,~12
 	Else
-		For(W,1,4,3:Text(~1,W,1,"       
+		For(W,1,4,3:Text(~1,W,1,Str4
 			Text(~1,W,40," 
 		End
 		Text(3,4,sub("SIAMETROLLDUCK-FISH EVIL BAT  SENTINEL  DARK MIST W-1337    SLIME     SLIME     GIANT BEE DEVOURER  ESPYLACOPAOVERSEER  MEGA FLY  CARNIVORA LOST ALIENGAITOS    CURATOS   AURATOS   GUARDIAN  EVIL WALL MAOS      ",10R-29,10
 	End
 End
 StorePic 0
-0->PMT
+0->G
 1->L
 0->Q
 0->N
 While L!=99 and L3(1)>0 and 0<L4(1
-	not(PMT->PMT
-	If PMT:Then
+	not(G->G
+	If G:Then
 		While L>0 and L<99
 			For(W,47,52,5
-				Text(~1,W,3,sub("              ",1,11+3(L=2
+				Text(~1,W,3,sub(Str7+"   ",1,11+3(L=2
 				Text(~1,W,66+20(L=2)," 
 			End
 			If L=2 and Z=21
@@ -1051,7 +1053,7 @@ While L!=99 and L3(1)>0 and 0<L4(1
 	Else
 		If O:Text(53,4,abs(O)," "+sub("DMG HEAL",4(O>0)+1,4)+" TO YOU
 		If P:Text(47,4,P," DMG TO ENEMY
-		If PMT=0 and (P or O!=0:Then
+		If G=0 and (P or O!=0:Then
 			For(Z,0,500
 			End
 			For([recursiven],~1,0
@@ -1098,7 +1100,7 @@ If 0>=L4(1:Then
 		Goto ER
 	End
 	Text(47,4,"VICTORY!
-	Text(3,76,"HP        
+	Text(3,76,"HP "+Str4
 	10L4(2)+L3(1->L3(1
 	10L4(2)+L3(2->L3(2
 	6L4(2)+L3(3->L3(3
@@ -1212,7 +1214,7 @@ Repeat Z=21 or Z=31
 	theta+1->theta
 	If theta=62 or theta=20 or theta=40 or theta=60:Then
 		For(W,3,7,4
-			Text(~1,W,3,"       
+			Text(~1,W,3,Str4
 		End
 		Line(44,~3,44,~14
 	End
@@ -1243,7 +1245,7 @@ End
 Goto RT
 Lbl SA
 SetUpEditor |LDBLST
-augment(L3,{|N,I%,A,B,FV->L4
+augment(L3,{M,J,A,B,I->L4
 L4->|LDBLST
 Archive |LDBLST
 61->theta
@@ -1369,7 +1371,7 @@ End
 If L=11:Then
 	0->Q
 	L3(23)-1->L3(23
-	Text(3,76,"HP        
+	Text(3,76,"HP "+Str4
 End
 If L=12:Then
 	1|E~4L3(4->O
@@ -1447,4 +1449,4 @@ Goto R3
 Lbl EX
 ClrDraw
 RecallGDB 1
-DelVar GDB1DelVar L1DelVar L3DelVar L4DelVar ADelVar BDelVar CDelVar DDelVar EDelVar FDelVar HDelVar LDelVar NDelVar ODelVar PDelVar QDelVar RDelVar VDelVar WDelVar ZDelVar thetaDelVar Pic0DelVar Str1DelVar Str2DelVar Str3DelVar Str5DelVar Str6DelVar Str7DelVar Str9DelVar Str0Disp 
+DelVar GDB1DelVar L1DelVar L3DelVar L4DelVar ADelVar BDelVar CDelVar DDelVar EDelVar FDelVar GDelVar HDelVar IDelVar JDelVar KDelVar LDelVar MDelVar NDelVar ODelVar PDelVar QDelVar RDelVar VDelVar WDelVar ZDelVar thetaDelVar Pic0DelVar Str1DelVar Str2DelVar Str3DelVar Str4DelVar Str5DelVar Str6DelVar Str7DelVar Str9DelVar Str0Disp 
