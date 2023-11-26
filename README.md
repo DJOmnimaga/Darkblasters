@@ -1,7 +1,7 @@
 # Darkblasters  
 v1.2.0
 
-(c)2021-23 DJ Omnimaga Music  
+(c)2021-23 Dream of Omnimaga
 Optimized with the help of mr womp womp  
 https://djomnimaga.music-2000.com
 
